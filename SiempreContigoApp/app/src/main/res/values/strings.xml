@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Siempre Contigo</string>
+    <string name="onboarding_welcome_title">Hola, soy Siempre Contigo</string>
+    <string name="onboarding_welcome_body">Te ayudo a enviar WhatsApp, escribir correos, crear recordatorios y hacer llamadas. Con calma y paso a paso.</string>
+    <string name="onboarding_how_title">Cómo te ayudo</string>
+    <string name="onboarding_how_body">Me escribes lo que quieres hacer. Yo lo preparo. Tú revisas y decides si continuar.</string>
+    <string name="onboarding_contacts_title">Tus contactos</string>
+    <string name="onboarding_contacts_body">Para encontrar a Ana o a Carlos en tu agenda, necesito permiso para leer tus contactos. Solo los uso en tu móvil. No los guardo en internet.</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_allow_contacts">Permitir contactos</string>
+    <string name="onboarding_skip_contacts">Ahora no</string>
+    <string name="onboarding_start">Empezar</string>
+    <string name="contacts_rationale_title">Necesito ver tus contactos</string>
+    <string name="contacts_rationale_body">Así puedo buscar el teléfono de la persona que me digas. Solo en este móvil.</string>
+    <string name="contacts_rationale_allow">Continuar</string>
+    <string name="contacts_rationale_cancel">Cancelar</string>
+</resources>
