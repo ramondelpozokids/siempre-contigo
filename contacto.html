@@ -79,13 +79,17 @@
           </div>
 
           <h2 id="formulario">Enviar mensaje</h2>
-          <p>Completa el formulario y te responderemos en un plazo máximo de <strong>24 horas laborables</strong>. En esta versión local el envío es una demostración (no llega a ningún servidor).</p>
+          <p>Completa el formulario y te responderemos en un plazo máximo de <strong>24 horas laborables</strong>.</p>
 
           <div id="contactSuccess" class="contact-form__success" hidden tabindex="-1" role="status">
             <strong>¡Gracias!</strong> Hemos recibido tu mensaje. Si necesitas ayuda urgente, llama al <a href="tel:+34900123456">900 123 456</a>.
           </div>
 
-          <form id="contactForm" class="contact-form" action="#" method="post">
+          <div id="contactError" class="contact-form__success" hidden tabindex="-1" role="alert" style="border-color:#dc2626;">
+            <strong>No se ha podido enviar.</strong> Prueba de nuevo o escribe a <a href="mailto:soporte@siemprecontigo.app">soporte@siemprecontigo.app</a>.
+          </div>
+
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/meajajnd" method="post">
             <div class="contact-form__row">
               <label>
                 Nombre

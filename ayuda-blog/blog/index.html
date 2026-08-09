@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="../images/brand/favicon.png" />
+  <title>Blog — Siempre Contigo</title>
+  <meta name="description" content="Artículos y novedades de Siempre Contigo." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/dark-mode.css" />
+  <link rel="stylesheet" href="../css/legal.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="../images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="../index.html" class="btn btn--primary btn--sm">Volver al inicio</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" role="main">
+    <section class="legal-hero">
+      <div class="container">
+        <span class="legal-hero__eyebrow">Blog</span>
+        <h1>Blog</h1>
+        <p class="legal-hero__meta">Última actualización: <time datetime="2026-08-01">1 de agosto de 2026</time></p>
+      </div>
+    </section>
+    <section class="legal">
+      <div class="container">
+        <article class="legal__content" style="max-width:760px;margin:0 auto;">
+          <p class="legal__lead">Artículos sobre tecnología accesible, seguridad digital y consejos prácticos para el día a día. Iremos ampliando esta sección poco a poco.</p>
+
+          <hr style="border:none;border-top:1px solid var(--c-gray-200);margin:var(--sp-10) 0;" />
+
+          <article id="whatsapp-familiar">
+            <span class="legal-hero__eyebrow" style="display:inline-block;margin-bottom:var(--sp-3);">Guías</span>
+            <h2>Cómo configurar WhatsApp con un familiar a distancia</h2>
+            <p class="legal__lead" style="font-size:var(--fs-base);">Una guía paso a paso para ayudar a un padre, madre o abuelo a usar WhatsApp sin tener que estar físicamente a su lado.</p>
+
+            <p>Cuando no puedes estar en persona, lo más eficaz es hacer una videollamada mientras el familiar tiene el móvil delante. Estos son los pasos que mejor funcionan:</p>
+            <ol>
+              <li><strong>Empieza por una videollamada tranquila.</strong> Antes de tocar nada, explica en voz alta qué vais a hacer y por qué, sin prisa.</li>
+              <li><strong>Pide que comparta la pantalla si es posible.</strong> Muchos móviles permiten compartir pantalla durante una videollamada; así ves exactamente lo mismo que tu familiar.</li>
+              <li><strong>Ve función por función.</strong> Primero cómo abrir un chat, luego cómo enviar un mensaje de voz, y solo después fotos o videollamadas. No lo expliques todo de golpe.</li>
+              <li><strong>Deja que lo haga él o ella.</strong> Resiste la tentación de coger el control remoto o de hacerlo tú «para ir más rápido». Aprender haciendo, aunque tarde más, se queda mejor.</li>
+              <li><strong>Anota los pasos en papel si lo prefiere.</strong> Un pequeño esquema a mano, con letra grande, junto al móvil, ayuda mucho más que un manual digital.</li>
+            </ol>
+            <p>Si en algún momento el proceso genera frustración, es buena señal parar y retomarlo otro día. La confianza con la tecnología se construye poco a poco, no en una sola sesión.</p>
+          </article>
+
+          <hr style="border:none;border-top:1px solid var(--c-gray-200);margin:var(--sp-10) 0;" />
+
+          <article id="correo-fraudulento">
+            <span class="legal-hero__eyebrow" style="display:inline-block;margin-bottom:var(--sp-3);">Seguridad</span>
+            <h2>Señales de un correo fraudulento, explicadas sin tecnicismos</h2>
+            <p class="legal__lead" style="font-size:var(--fs-base);">No hace falta ser experto en informática para detectar un intento de estafa. Basta con fijarse en unas pocas señales.</p>
+
+            <p>Los correos fraudulentos (lo que se conoce como <em>phishing</em>) intentan que actúes rápido, sin pensar. Estas son las señales más habituales:</p>
+            <ul>
+              <li><strong>Te meten prisa.</strong> «Tu cuenta se bloqueará en 24 horas», «Última oportunidad». Las entidades serias no suelen presionar así.</li>
+              <li><strong>Piden datos que ya deberían tener.</strong> Ningún banco te va a pedir por correo tu contraseña completa o el PIN de tu tarjeta.</li>
+              <li><strong>El remitente no encaja.</strong> Fíjate en la dirección de correo completa, no solo en el nombre que aparece. Un banco real no escribe desde una dirección con letras y números sueltos.</li>
+              <li><strong>Enlaces que no llevan donde dicen.</strong> Si tienes dudas, no toques el enlace del correo: abre el navegador y escribe tú mismo la web oficial de la entidad.</li>
+              <li><strong>Errores de redacción.</strong> Faltas de ortografía o frases raras en un mensaje que dice ser de una gran empresa son una señal de alarma.</li>
+            </ul>
+            <p><strong>La regla más segura:</strong> si algo te genera duda, no respondas ni hagas clic. Llama directamente a tu banco o a la entidad usando el teléfono que ya conocías de antes (no el que aparece en el correo sospechoso). Y si usas Siempre Contigo, puedes simplemente preguntar: «¿este correo es seguro?» y te ayudamos a valorarlo.</p>
+          </article>
+
+          <div class="legal__info-card" style="margin-top:var(--sp-10);">
+            <strong>¿Sobre qué te gustaría que escribiéramos?</strong>
+            <p style="margin:0;">Cuéntanoslo en el <a href="../contacto.html">formulario de contacto</a>. Iremos ampliando el blog con los temas que más interesen a nuestra comunidad.</p>
+          </div>
+
+          <p style="margin-top:var(--sp-8);"><a href="../contacto.html" class="btn btn--primary">Contactar</a> <a href="../index.html" class="btn btn--ghost">Volver al inicio</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:0;padding-top:0;">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p><a href="../aviso-legal.html">Aviso legal</a> · <a href="../privacidad.html">Privacidad</a> · <a href="../mapa-del-sitio.html">Mapa del sitio</a></p>
+      </div>
+    </div>
+  </footer>
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookieTitle">
+    <div class="cookie-banner__grid">
+      <div class="cookie-banner__text">
+        <h3 id="cookieTitle">🍪 Usamos cookies para mejorar tu experiencia</h3>
+        <p>Puedes aceptarlas todas, rechazarlas o configurar tus preferencias.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <a href="../cookies.html" class="cookie-banner__link">Más información</a>
+        <button class="btn btn--ghost btn--sm" id="cookieReject" type="button">Rechazar</button>
+        <button class="btn btn--ghost btn--sm" id="cookieConfigure" type="button">Configurar</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept" type="button">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/local-bootstrap.js"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/cookies.js"></script>
+</body>
+</html>

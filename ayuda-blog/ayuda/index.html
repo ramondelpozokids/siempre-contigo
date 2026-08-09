@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="../images/brand/favicon.png" />
+  <title>Centro de ayuda — Siempre Contigo</title>
+  <meta name="description" content="Ayuda y soporte de Siempre Contigo." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/dark-mode.css" />
+  <link rel="stylesheet" href="../css/legal.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="../index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="../images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="../index.html" class="btn btn--primary btn--sm">Volver al inicio</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" role="main">
+    <section class="legal-hero">
+      <div class="container">
+        <span class="legal-hero__eyebrow">Ayuda</span>
+        <h1>Centro de ayuda</h1>
+        <p class="legal-hero__meta">Última actualización: <time datetime="2026-08-01">1 de agosto de 2026</time></p>
+      </div>
+    </section>
+    <section class="legal">
+      <div class="container">
+        <article class="legal__content" style="max-width:840px;margin:0 auto;">
+          <p class="legal__lead">Respuestas a las dudas más habituales. Si no encuentras la tuya, escríbenos a <a href="../contacto.html">contacto</a> o llama al <a href="tel:+34900123456">900 123 456</a>.</p>
+
+          <div class="contact-grid" style="margin-bottom:var(--sp-10);">
+            <div class="contact-card"><h3>🚀 Empezar</h3><p>Instalación y primeros pasos.</p></div>
+            <div class="contact-card"><h3>🎙️ Voz y comandos</h3><p>Cómo hablarle al asistente.</p></div>
+            <div class="contact-card"><h3>👨‍👩‍👧 Familia</h3><p>Conectar y supervisar cuentas.</p></div>
+            <div class="contact-card"><h3>🔒 Privacidad</h3><p>Tus datos y tu control.</p></div>
+          </div>
+
+          <h2>🚀 Empezar</h2>
+          <ul class="faq__list" role="list">
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h1">
+                <span>¿Cómo instalo Siempre Contigo?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h1" class="faq__answer" hidden>
+                <p>Sigue los pasos de la <a href="../guia.html">guía de inicio rápido</a>. Lo ideal es hacerlo la primera vez acompañado de un familiar, aunque no es obligatorio.</p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h2">
+                <span>¿Necesito saber usar el móvil para utilizarlo?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h2" class="faq__answer" hidden>
+                <p>No. Funciona principalmente por voz: solo con hablar es suficiente. Un familiar puede ayudarte con la instalación inicial y, a partir de ahí, todo es automático.</p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h3">
+                <span>¿En qué dispositivos funciona?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h3" class="faq__answer" hidden>
+                <p>Android (versión 10 o superior) y iPhone (iOS 15 o superior). Estamos trabajando en versiones para tablet y asistentes de hogar.</p>
+              </div>
+            </li>
+          </ul>
+
+          <h2>🎙️ Voz y comandos</h2>
+          <ul class="faq__list" role="list">
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h4">
+                <span>¿Tengo que decir comandos exactos?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h4" class="faq__answer" hidden>
+                <p>No, puedes hablarle de forma natural, como a una persona. Consulta ejemplos de frases en la <a href="../guia.html#comandos">guía de inicio rápido</a>.</p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h5">
+                <span>¿Puede la IA hacer compras o pagos sin permiso?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h5" class="faq__answer" hidden>
+                <p>Jamás. Cualquier acción sensible (compras, pagos, envíos) requiere una confirmación explícita por voz o huella. Siempre decides tú.</p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h6">
+                <span>¿Qué hago si no me entiende?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h6" class="faq__answer" hidden>
+                <p>Prueba a hablar despacio y en una habitación sin ruido de fondo. Si sigue sin funcionar, di «hablar con una persona» y un miembro del equipo te ayudará directamente.</p>
+              </div>
+            </li>
+          </ul>
+
+          <h2>👨‍👩‍👧 Familia</h2>
+          <ul class="faq__list" role="list">
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h7">
+                <span>¿Cómo conecto a un familiar a mi cuenta?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h7" class="faq__answer" hidden>
+                <p>Desde <strong>Ajustes → Familia</strong> puedes invitarle por correo. Debe aceptar la invitación antes de recibir alertas o poder ayudarte en remoto.</p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h8">
+                <span>¿Cuántos familiares puedo conectar?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h8" class="faq__answer" hidden>
+                <p>Depende del plan contratado. Consulta el detalle en <a href="../precios.html">Precios y tarifas</a>.</p>
+              </div>
+            </li>
+          </ul>
+
+          <h2>🔒 Privacidad</h2>
+          <ul class="faq__list" role="list">
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h9">
+                <span>¿Qué pasa con mis datos personales?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h9" class="faq__answer" hidden>
+                <p>Se procesan localmente siempre que es posible. Nunca los vendemos a terceros. Todo el detalle está en la <a href="../privacidad.html">Política de privacidad</a>.</p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__question" aria-expanded="false" aria-controls="faq-h10">
+                <span>¿Cómo elimino mi cuenta y mis datos?</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <div id="faq-h10" class="faq__answer" hidden>
+                <p>Escribe a <a href="mailto:dpo@siemprecontigo.app">dpo@siemprecontigo.app</a> pidiendo la supresión. Se elimina en un plazo máximo de 30 días, según se explica en <a href="../rgpd.html">RGPD y protección de datos</a>.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="legal__info-card" style="margin-top:var(--sp-10);">
+            <strong>¿No encuentras tu respuesta?</strong>
+            <p style="margin:0;">Escríbenos a <a href="mailto:soporte@siemprecontigo.app">soporte@siemprecontigo.app</a> o usa el <a href="../contacto.html">formulario de contacto</a>. Respondemos en un máximo de 24 horas laborables.</p>
+          </div>
+
+          <p style="margin-top:var(--sp-8);"><a href="../contacto.html" class="btn btn--primary">Contactar</a> <a href="../guia.html" class="btn btn--ghost">Guía de inicio rápido</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:0;padding-top:0;">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p><a href="../aviso-legal.html">Aviso legal</a> · <a href="../privacidad.html">Privacidad</a> · <a href="../mapa-del-sitio.html">Mapa del sitio</a></p>
+      </div>
+    </div>
+  </footer>
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookieTitle">
+    <div class="cookie-banner__grid">
+      <div class="cookie-banner__text">
+        <h3 id="cookieTitle">🍪 Usamos cookies para mejorar tu experiencia</h3>
+        <p>Puedes aceptarlas todas, rechazarlas o configurar tus preferencias.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <a href="../cookies.html" class="cookie-banner__link">Más información</a>
+        <button class="btn btn--ghost btn--sm" id="cookieReject" type="button">Rechazar</button>
+        <button class="btn btn--ghost btn--sm" id="cookieConfigure" type="button">Configurar</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept" type="button">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/local-bootstrap.js"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/cookies.js"></script>
+</body>
+</html>
