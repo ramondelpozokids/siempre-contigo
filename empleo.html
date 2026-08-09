@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="images/brand/favicon.png" />
+  <title>Trabaja con nosotros — Siempre Contigo</title>
+  <meta name="description" content="Oportunidades laborales en Siempre Contigo." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="index.html" class="btn btn--primary btn--sm">Volver al inicio</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" role="main">
+    <section class="legal-hero">
+      <div class="container">
+        <span class="legal-hero__eyebrow">Empleo</span>
+        <h1>Trabaja con nosotros</h1>
+        <p class="legal-hero__meta">Contenido en preparación · Actualizado agosto 2026</p>
+      </div>
+    </section>
+    <section class="legal">
+      <div class="container">
+        <article class="legal__content" style="max-width:720px;margin:0 auto;">
+          <p>Buscamos personas con vocación de servicio y experiencia en accesibilidad, IA o atención a mayores.</p><p><strong>RR. HH.:</strong> <a href="mailto:empleo@siemprecontigo.app">empleo@siemprecontigo.app</a></p>
+          <p style="margin-top:var(--sp-8);"><a href="contacto.html" class="btn btn--primary">Contactar</a> <a href="mapa-del-sitio.html" class="btn btn--ghost">Mapa del sitio</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:0;padding-top:0;">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="mapa-del-sitio.html">Mapa del sitio</a></p>
+      </div>
+    </div>
+  </footer>
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookieTitle">
+    <div class="cookie-banner__grid">
+      <div class="cookie-banner__text">
+        <h3 id="cookieTitle">🍪 Usamos cookies para mejorar tu experiencia</h3>
+        <p>Puedes aceptarlas todas, rechazarlas o configurar tus preferencias.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <a href="cookies.html" class="cookie-banner__link">Más información</a>
+        <button class="btn btn--ghost btn--sm" id="cookieReject" type="button">Rechazar</button>
+        <button class="btn btn--ghost btn--sm" id="cookieConfigure" type="button">Configurar</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept" type="button">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/local-bootstrap.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/cookies.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marca — Siempre Contigo</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: Inter, system-ui, sans-serif; background: #f1f5f9; color: #0f172a; padding: 48px 24px; }
+    h1 { font-size: 1.75rem; letter-spacing: -0.03em; margin-bottom: 8px; }
+    p.lead { color: #64748b; margin-bottom: 40px; max-width: 720px; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; }
+    .card { border-radius: 20px; padding: 28px; display: flex; flex-direction: column; align-items: center; gap: 16px; min-height: 200px; justify-content: center; border: 1px solid #e2e8f0; }
+    .card--light { background: #fff; }
+    .card--dark { background: #0f172a; border-color: #1e293b; }
+    .card h2 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #64748b; font-weight: 600; text-align: center; }
+    .card--dark h2 { color: #94a3b8; }
+    img { max-width: 100%; height: auto; }
+    .showcase { max-width: 1100px; margin-top: 40px; border-radius: 24px; overflow: hidden; box-shadow: 0 24px 80px -24px rgba(37,99,235,0.2); border: 1px solid #e2e8f0; background: #fff; padding: 24px; }
+    ul.downloads { max-width: 1100px; margin-top: 32px; line-height: 2.2; }
+    a.back { display: inline-block; margin-top: 32px; color: #2563eb; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Sistema de marca Siempre Contigo</h1>
+  <p class="lead">Archivos originales que enviaste — sin reinterpretaciones. Usa Ctrl+F5 si ves una versión antigua en caché.</p>
+  <div class="grid">
+    <section class="card card--light">
+      <h2>Logo · fondo blanco</h2>
+      <img src="logo-oficial.png" width="280" alt="Siempre Contigo" />
+    </section>
+    <section class="card card--dark">
+      <h2>Logo · sin fondo / oscuro</h2>
+      <img src="logo-sin-fondo.png" width="280" alt="Siempre Contigo" />
+    </section>
+    <section class="card card--light">
+      <h2>App · icono claro</h2>
+      <img src="logo-isotipo-nav.svg" width="120" alt="" />
+    </section>
+    <section class="card card--dark">
+      <h2>App · icono oscuro</h2>
+      <img src="app-icon-dark.png" width="120" alt="" />
+    </section>
+    <section class="card card--light">
+      <h2>Favicon</h2>
+      <img src="favicon.png" width="64" height="64" alt="" />
+    </section>
+  </div>
+  <div class="showcase">
+    <img src="logo-kit-presentacion.png" width="1100" alt="Guía de marca Siempre Contigo" style="width:100%;display:block;" />
+  </div>
+  <ul class="downloads">
+    <li><a href="logo-oficial.png" download>logo-oficial.png</a></li>
+    <li><a href="logo-sin-fondo.png" download>logo-sin-fondo.png</a></li>
+    <li><a href="logo-isotipo-nav.svg" download>logo-isotipo-nav.svg</a></li>
+    <li><a href="app-icon-dark.png" download>app-icon-dark.png</a></li>
+    <li><a href="logo-kit-presentacion.png" download>logo-kit-presentacion.png</a></li>
+    <li><a href="favicon.png" download>favicon.png</a></li>
+    <li><a href="app-icon-light.ico" download>Icono accesos Escritorio (.ico)</a></li>
+  </ul>
+  <a class="back" href="../../index.html">← Volver a la web</a>
+</body>
+</html>

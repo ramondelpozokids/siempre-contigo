@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="images/brand/favicon.png" />
+  <title>Mapa del Sitio — Siempre Contigo</title>
+  <meta name="description" content="Índice completo de todas las páginas y secciones del sitio web Siempre Contigo." />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="index.html" class="btn btn--primary btn--sm">Volver al inicio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" role="main" class="sitemap">
+    <div class="container">
+      <span class="section-label">Navegación completa</span>
+      <h1 style="font-size:clamp(2.5rem, 6vw, var(--fs-5xl));letter-spacing:-0.035em;margin-top:var(--sp-4);">Mapa del Sitio</h1>
+      <p style="font-size:var(--fs-lg);color:var(--c-text-soft);max-width:680px;margin-top:var(--sp-5);">
+        Todas las páginas de Siempre Contigo organizadas para que encuentres lo que buscas en segundos.
+      </p>
+
+      <div class="sitemap__grid">
+        <section class="sitemap__col" aria-label="Producto">
+          <h3>Producto</h3>
+          <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="index.html#caracteristicas">Características</a></li>
+            <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+            <li><a href="index.html#familia">Para familias</a></li>
+            <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+            <li><a href="precios.html">Precios y tarifas</a></li>
+            <li><a href="index.html#cta">Empezar ahora</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap__col" aria-label="Empresa">
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="prensa.html">Sala de prensa</a></li>
+            <li><a href="empleo.html">Trabaja con nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="partners.html">Colaboradores</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap__col" aria-label="Recursos">
+          <h3>Recursos</h3>
+          <ul>
+            <li><a href="ayuda/">Centro de ayuda</a></li>
+            <li><a href="guia.html">Guía de inicio rápido</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+            <li><a href="api.html">API para desarrolladores</a></li>
+            <li><a href="estado.html">Estado del servicio</a></li>
+            <li><a href="seguridad.html">Centro de seguridad</a></li>
+          </ul>
+        </section>
+
+        <section class="sitemap__col" aria-label="Legal">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+            <li><a href="cookies.html">Política de cookies</a></li>
+            <li><a href="condiciones.html">Condiciones del servicio</a></li>
+            <li><a href="accesibilidad.html">Declaración de accesibilidad</a></li>
+            <li><a href="rgpd.html">RGPD y protección de datos</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <section style="margin-top:var(--sp-16);text-align:center;">
+        <h2 style="font-size:var(--fs-2xl);margin-bottom:var(--sp-4);">¿No encuentras lo que buscas?</h2>
+        <p style="font-size:var(--fs-md);color:var(--c-text-soft);margin-bottom:var(--sp-6);">Nuestro equipo de atención al cliente está disponible de lunes a viernes de 9:00 a 19:00.</p>
+        <a href="contacto.html" class="btn btn--primary btn--lg">Contactar con nosotros</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:0;padding-top:0;">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p>Hecho con cariño para las personas que queremos.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/local-bootstrap.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

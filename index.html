@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0e1a" media="(prefers-color-scheme: dark)" />
+
+  <title>Siempre Contigo — Tu asistente inteligente para mayores</title>
+  <meta name="description" content="Siempre Contigo es el asistente inteligente que ayuda a las personas mayores a usar el móvil, WhatsApp, correo e internet sin miedo. Nunca volverás a sentirte solo frente a la tecnología." />
+  <meta name="keywords" content="asistente mayores, IA mayores, WhatsApp abuelos, accesibilidad móvil, tecnología mayores, Siempre Contigo" />
+  <meta name="author" content="Siempre Contigo" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Siempre Contigo — Tu asistente inteligente para mayores" />
+  <meta property="og:description" content="La tecnología deja de ser un problema para convertirse en un compañero." />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Siempre Contigo" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Siempre Contigo — Tu asistente inteligente para mayores" />
+  <meta name="twitter:description" content="La tecnología deja de ser un problema para convertirse en un compañero." />
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+
+  <link rel="icon" type="image/png" href="images/brand/favicon.png" />
+  <link rel="apple-touch-icon" href="images/brand/apple-touch-icon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Siempre Contigo",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS, Android",
+    "description": "Asistente inteligente para personas mayores que facilita el uso del móvil, WhatsApp, correo electrónico e internet.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "12847"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link (WCAG AAA) -->
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+
+      <ul class="nav__links" id="navMenu" role="menubar">
+        <li role="none"><a role="menuitem" href="#caracteristicas">Características</a></li>
+        <li role="none"><a role="menuitem" href="#como-funciona">Cómo funciona</a></li>
+        <li role="none"><a role="menuitem" href="#familia">Familia</a></li>
+        <li role="none"><a role="menuitem" href="precios.html">Precios</a></li>
+        <li role="none"><a role="menuitem" href="#faq">Preguntas</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="nav__menu-btn" id="navMenuBtn" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro u oscuro" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2" x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="2" y1="12" x2="5" y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+              <line x1="4.9" y1="4.9" x2="7" y2="7"/>
+              <line x1="17" y1="17" x2="19.1" y2="19.1"/>
+              <line x1="4.9" y1="19.1" x2="7" y2="17"/>
+              <line x1="17" y1="7" x2="19.1" y2="4.9"/>
+            </g>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <a href="#cta" class="btn btn--primary btn--sm">Comenzar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg-orbs" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+      </div>
+
+      <div class="hero__container">
+        <div class="hero__content reveal">
+          <span class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Nuevo · Inteligencia artificial responsable
+          </span>
+
+          <h1 id="hero-title" class="hero__title">
+            Nunca volverás a sentirte <em>perdido</em> con la tecnología.
+          </h1>
+
+          <p class="hero__subtitle">
+            Siempre Contigo es un asistente inteligente pensado para ayudar a las personas mayores a utilizar el móvil, WhatsApp, el correo electrónico, Internet y cualquier aplicación <strong>sin miedo</strong>.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#cta" class="btn btn--primary btn--lg">
+              Comenzar
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <button class="btn btn--ghost btn--lg" id="demoBtn" type="button" aria-label="Ver ejemplos de conversación con el asistente">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <polygon points="10 8 16 12 10 16" fill="currentColor"/>
+              </svg>
+              Ver ejemplos
+            </button>
+          </div>
+
+          <div class="hero__trust" aria-label="Métricas de confianza">
+            <div class="hero__trust-item">
+              <strong>4.9/5</strong>
+              <span>Valoración de usuarios</span>
+            </div>
+            <div class="hero__trust-item">
+              <strong>+50.000</strong>
+              <span>Familias conectadas</span>
+            </div>
+            <div class="hero__trust-item">
+              <strong>24/7</strong>
+              <span>Asistencia humana</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__mockup">
+            <div class="hero__mockup-glow" aria-hidden="true"></div>
+            <img src="images/hero.svg" alt="Persona mayor sonriente usando un móvil mientras un asistente de IA amable le ayuda" class="hero__mockup-img" loading="eager" />
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--1 glass" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>WhatsApp listo</strong>
+              <span>Envía en 3 segundos</span>
+            </div>
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--2 glass" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2 2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>IA amable</strong>
+              <span>Siempre disponible</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Siga bajando para ver más</span>
+        <div class="scroll-indicator__line"></div>
+      </div>
+    </section>
+
+    <!-- ================= HISTORIA ================= -->
+    <section class="story" aria-labelledby="story-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Nuestra razón de ser</span>
+          <h2 id="story-title">¿Por qué existe Siempre Contigo?</h2>
+        </div>
+
+        <div class="story__grid">
+          <div class="story__text reveal">
+            <p class="story__lead">
+              Millones de personas mayores sienten frustración cuando un móvil cambia, cuando aparece una actualización o cuando reciben un mensaje que no entienden.
+            </p>
+            <p>
+              No necesitan otro curso. No necesitan otro manual. <strong>Necesitan alguien que esté siempre con ellos.</strong>
+            </p>
+            <p>
+              Siempre Contigo nació de una conversación sencilla entre un hijo y su madre. Ella no entendía el nuevo WhatsApp. Él no podía ir hasta su casa.
+              Ahí nació la idea: <em>un compañero, no una herramienta</em>.
+            </p>
+          </div>
+
+          <ul class="story__values" role="list">
+            <li class="story__value reveal">
+              <span class="story__value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </span>
+              <h3>Cercanía</h3>
+              <p>Como si tuvieras a un familiar al lado.</p>
+            </li>
+            <li class="story__value reveal reveal--delay">
+              <span class="story__value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </span>
+              <h3>Seguridad</h3>
+              <p>Tus datos nunca salen de tu dispositivo.</p>
+            </li>
+            <li class="story__value reveal reveal--delay-2">
+              <span class="story__value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              <h3>Paciencia</h3>
+              <p>Sin prisa. Sin juicios. A tu ritmo.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CARACTERÍSTICAS ================= -->
+    <section id="caracteristicas" class="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Todo lo que puedes hacer</span>
+          <h2 id="features-title">¿Qué puede hacer por ti?</h2>
+          <p class="section-lead">Diseñado para las pequeñas y grandes cosas del día a día.</p>
+        </div>
+
+        <ul class="features__grid" role="list">
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <h3>Usar WhatsApp</h3>
+            <p>Envía y recibe mensajes, fotos y vídeos con solo hablar.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h3>Leer correos</h3>
+            <p>Te los lee en voz alta y te explica qué significan.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </div>
+            <h3>Encontrar fotos</h3>
+            <p>Busca por fechas, personas o momentos. Te la trae.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+            </div>
+            <h3>Videollamadas</h3>
+            <p>Conecta con tu familia con un solo comando de voz.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 12h3m-3 3h3m-6-9h.01"/>
+              </svg>
+            </div>
+            <h3>Recordatorios</h3>
+            <p>Medicinas, citas, cumpleaños. Nunca te olvides de nada.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.82 2.96 0L15 8"/>
+              </svg>
+            </div>
+            <h3>Pedir cita médica</h3>
+            <p>Gestiona tus citas sin llamar a ninguna centralita.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+            </div>
+            <h3>Banca online</h3>
+            <p>Consulta saldos y movimientos sin complicaciones.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </div>
+            <h3>Comprar online</h3>
+            <p>Haz tus pedidos de supermercado con total seguridad.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1-2-2-3-3-2-3-2H7c-1 0-2 1-3 2S2 10 2 10c-1.5.5-2 1-2 1v6c0 .6.4 1 1 1h1"/>
+                <circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/>
+              </svg>
+            </div>
+            <h3>Buscar autobuses</h3>
+            <p>Te dice horarios, paradas y rutas en tiempo real.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>Cómo llegar</h3>
+            <p>Te guía paso a paso hasta cualquier sitio.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+              </svg>
+            </div>
+            <h3>Ver el tiempo</h3>
+            <p>El clima de tu zona, con palabras claras.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3>Detectar estafas</h3>
+            <p>Analiza mensajes sospechosos y te protege.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3>Enlaces seguros</h3>
+            <p>Avisa antes de que pulses algo peligroso.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3>Llamar solo con voz</h3>
+            <p>"Llama a mi hija". Listo.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <h3>Leer en voz alta</h3>
+            <p>Cualquier mensaje o correo, leído con claridad.</p>
+          </li>
+
+          <li class="feature-card glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Avisar a tu familia</h3>
+            <p>Si necesitas ayuda, avisa a quien tú elijas con una sola frase.</p>
+          </li>
+
+          <li class="feature-card feature-card--accent glass reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+              </svg>
+            </div>
+            <h3>Habla con la IA</h3>
+            <p>Como si hablaras con una persona. Sin menús. Sin teclas.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CÓMO FUNCIONA ================= -->
+    <section id="como-funciona" class="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Cuatro pasos, cero complicaciones</span>
+          <h2 id="how-title">Así de fácil.</h2>
+        </div>
+
+        <ol class="how__steps" role="list">
+          <li class="how__step reveal">
+            <div class="how__step-number">01</div>
+            <div class="how__step-content">
+              <h3>Habla.</h3>
+              <blockquote>"Quiero enviar una foto a mi nieto."</blockquote>
+            </div>
+          </li>
+          <li class="how__step reveal" aria-hidden="true">
+            <div class="how__step-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <polyline points="19 12 12 19 5 12"/>
+              </svg>
+            </div>
+          </li>
+          <li class="how__step reveal">
+            <div class="how__step-number">02</div>
+            <div class="how__step-content">
+              <h3>La IA entiende.</h3>
+              <p>Interpreta lo que quieres en lenguaje natural.</p>
+            </div>
+          </li>
+          <li class="how__step reveal" aria-hidden="true">
+            <div class="how__step-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <polyline points="19 12 12 19 5 12"/>
+              </svg>
+            </div>
+          </li>
+          <li class="how__step reveal">
+            <div class="how__step-number">03</div>
+            <div class="how__step-content">
+              <h3>La IA hace el trabajo.</h3>
+              <p>Abre la aplicación, busca la foto, prepara el envío.</p>
+            </div>
+          </li>
+          <li class="how__step reveal" aria-hidden="true">
+            <div class="how__step-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <polyline points="19 12 12 19 5 12"/>
+              </svg>
+            </div>
+          </li>
+          <li class="how__step reveal">
+            <div class="how__step-number">04</div>
+            <div class="how__step-content">
+              <h3>Todo listo.</h3>
+              <p>Foto enviada. Sin tocar nada. Sin estrés.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= DEMOS CHAT ================= -->
+    <section id="demos" class="demos" aria-labelledby="demos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">En vivo</span>
+          <h2 id="demos-title">Mira cómo responde.</h2>
+          <p class="section-lead">Conversaciones reales, como hablar con un familiar.</p>
+        </div>
+
+        <div class="demos__grid">
+          <!-- Demo 1: Foto cumpleaños -->
+          <article class="chat-demo glass reveal">
+            <header class="chat-demo__header">
+              <div class="chat-demo__avatar" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                  <circle cx="12" cy="13" r="4"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Foto del cumpleaños</h3>
+                <span>Búsqueda inteligente</span>
+              </div>
+            </header>
+
+            <div class="chat-demo__body" data-chat="photo">
+              <div class="chat-msg chat-msg--user">
+                <span>No encuentro la foto de mi cumpleaños.</span>
+              </div>
+              <div class="chat-msg chat-msg--ai">
+                <span>La encontré. ¿Quieres enviarla a Ana por WhatsApp?</span>
+              </div>
+              <div class="chat-msg chat-msg--user">
+                <span>Sí.</span>
+              </div>
+              <div class="chat-msg chat-msg--ai">
+                <span>Hecho. ✅ Enviada a Ana hace 2 segundos.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Demo 2: Estafa -->
+          <article class="chat-demo glass reveal reveal--delay">
+            <header class="chat-demo__header">
+              <div class="chat-demo__avatar chat-demo__avatar--warn" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Correo sospechoso</h3>
+                <span>Protección anti-estafas</span>
+              </div>
+            </header>
+
+            <div class="chat-demo__body" data-chat="scam">
+              <div class="chat-msg chat-msg--user">
+                <span>He recibido este correo.</span>
+              </div>
+              <div class="chat-msg chat-msg--ai chat-msg--ai-warn">
+                <span>Es un intento de estafa. No pulses ningún enlace.</span>
+              </div>
+              <div class="chat-msg chat-msg--ai">
+                <span>Lo he marcado como spam y he avisado a tu familia. 🛡️</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Demo 3: Médico -->
+          <article class="chat-demo glass reveal reveal--delay-2">
+            <header class="chat-demo__header">
+              <div class="chat-demo__avatar chat-demo__avatar--health" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Pedir cita médica</h3>
+                <span>Gestión sanitaria</span>
+              </div>
+            </header>
+
+            <div class="chat-demo__body" data-chat="doctor">
+              <div class="chat-msg chat-msg--user">
+                <span>Quiero pedir cita con el médico.</span>
+              </div>
+              <div class="chat-msg chat-msg--ai">
+                <span>Perfecto. Voy a ayudarte. ¿Es con tu médico de cabecera, el Dr. Martínez?</span>
+              </div>
+              <div class="chat-msg chat-msg--user">
+                <span>Sí, para el jueves.</span>
+              </div>
+              <div class="chat-msg chat-msg--ai">
+                <span>Cita confirmada: Jueves a las 10:30 con el Dr. Martínez. 📅</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAMILIA ================= -->
+    <section id="familia" class="family" aria-labelledby="family-title">
+      <div class="container">
+        <div class="family__grid">
+          <div class="family__visual reveal">
+            <div class="family__phones">
+              <div class="family__phone family__phone--senior glass">
+                <div class="family__phone-notch"></div>
+                <div class="family__phone-screen">
+                  <div class="family__phone-label">Mamá · 72 años</div>
+                  <div class="family__phone-app">
+                    <p>"Llama a mi hija"</p>
+                    <div class="family__phone-status family__phone-status--calling">Llamando...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="family__phone family__phone--child glass">
+                <div class="family__phone-notch"></div>
+                <div class="family__phone-screen">
+                  <div class="family__phone-label">Ana · Hija</div>
+                  <div class="family__phone-app">
+                    <p>Mamá te ha enviado una foto</p>
+                    <img src="images/emotional.svg" alt="Foto familiar" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="family__content reveal">
+            <span class="section-label">La familia al centro</span>
+            <h2 id="family-title">Pensado para toda la familia.</h2>
+            <p class="family__lead">
+              Siempre Contigo conecta al mayor con sus familiares. La familia puede ayudar cuando sea necesario, sin complicaciones, sin desplazamientos.
+            </p>
+            <ul class="family__features" role="list">
+              <li class="family__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Siempre con permiso explícito</span>
+              </li>
+              <li class="family__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Sin desplazamientos innecesarios</span>
+              </li>
+              <li class="family__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Control total para quien lo usa</span>
+              </li>
+              <li class="family__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <span>Alertas discretas cuando hace falta</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONFIANZA ================= -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Compromiso real</span>
+          <h2 id="trust-title">¿Por qué confiar en Siempre Contigo?</h2>
+        </div>
+
+        <ul class="trust__grid" role="list">
+          <li class="trust-card glass reveal">
+            <div class="trust-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3>Privacidad absoluta</h3>
+            <p>Tus conversaciones se procesan en tu dispositivo. Nunca se venden ni se comparten.</p>
+          </li>
+
+          <li class="trust-card glass reveal">
+            <div class="trust-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Seguridad certificada</h3>
+            <p>Cifrado de extremo a extremo. Cumplimos ISO 27001 y RGPD.</p>
+          </li>
+
+          <li class="trust-card glass reveal">
+            <div class="trust-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Datos protegidos</h3>
+            <p>Solo se guardan los datos estrictamente necesarios. Puedes borrar todo con un botón.</p>
+          </li>
+
+          <li class="trust-card glass reveal">
+            <div class="trust-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4M12 16h.01"/>
+              </svg>
+            </div>
+            <h3>IA responsable</h3>
+            <p>Modelo auditado, sin sesgos, supervisado por un equipo humano ético.</p>
+          </li>
+
+          <li class="trust-card glass reveal">
+            <div class="trust-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3>Permisos transparentes</h3>
+            <p>Verás exactamente qué puede hacer la IA y por qué. Siempre.</p>
+          </li>
+
+          <li class="trust-card trust-card--highlight glass reveal">
+            <div class="trust-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>Siempre decides tú</h3>
+            <p>Cada acción requiere tu confirmación. No hay sorpresas ni automatismos ocultos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= EMOCIONAL ================= -->
+    <section class="emotion" aria-labelledby="emotion-title">
+      <div class="container">
+        <div class="emotion__grid">
+          <div class="emotion__media reveal">
+            <div class="emotion__frame">
+              <img src="images/emotional.svg" alt="Abuelo mirando con cariño una foto de su nieto en el móvil" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="emotion__content reveal">
+            <span class="section-label">Más allá del producto</span>
+            <h2 id="emotion-title">
+              No vendemos tecnología.<br/>
+              Devolvemos <em>tranquilidad</em>.
+            </h2>
+            <p>
+              Cada día, alguien deja de llamar a su familia por miedo a no saber usar el móvil.
+              Cada semana, una persona mayor borra una foto importante por error.
+              Cada mes, alguien pierde una cita médica porque no supo pedir hora.
+            </p>
+            <p class="emotion__quote">
+              <strong>Siempre Contigo existe para que esas historias dejen de repetirse.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Dudas resueltas</span>
+          <h2 id="faq-title">Preguntas frecuentes</h2>
+        </div>
+
+        <ul class="faq__list" role="list">
+          <li class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-1">
+              <span>¿Necesito saber usar el móvil para utilizarlo?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div id="faq-1" class="faq__answer" hidden>
+              <p>No. Siempre Contigo funciona principalmente por voz. Solo con hablar es suficiente. Un familiar puede hacer la instalación inicial y desde ahí todo es automático.</p>
+            </div>
+          </li>
+
+          <li class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-2">
+              <span>¿Qué pasa con mis datos personales?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div id="faq-2" class="faq__answer" hidden>
+              <p>Tus datos permanecen en tu dispositivo. Cumplimos el RGPD y la IA se procesa localmente siempre que es posible. Nunca vendemos información a terceros.</p>
+            </div>
+          </li>
+
+          <li class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-3">
+              <span>¿Puede la IA hacer compras o pagos sin permiso?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div id="faq-3" class="faq__answer" hidden>
+              <p>Jamás. Cualquier acción sensible (compras, pagos, envíos) requiere una confirmación explícita por voz o por huella. Siempre decides tú.</p>
+            </div>
+          </li>
+
+          <li class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-4">
+              <span>¿Cuánto cuesta?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div id="faq-4" class="faq__answer" hidden>
+              <p>Siempre Contigo tiene un plan gratuito (Esencial) y el plan Familia por <strong>9,99 €/mes</strong> con IVA incluido. <a href="precios.html">Ver todos los precios y la comparativa completa</a>.</p>
+            </div>
+          </li>
+
+          <li class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-5">
+              <span>¿En qué dispositivos funciona?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div id="faq-5" class="faq__answer" hidden>
+              <p>Funciona en móviles Android (versión 10 o superior) y iPhone (iOS 15 o superior). También estamos desarrollando versiones para tablets y asistentes de hogar.</p>
+            </div>
+          </li>
+
+          <li class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq-6">
+              <span>¿Hay una persona real al otro lado si lo necesito?</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+            <div id="faq-6" class="faq__answer" hidden>
+              <p>Sí. En cualquier momento puedes decir "hablar con una persona" y un humano te atenderá. Nuestro equipo está formado por personas especializadas en atención a mayores.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section id="cta" class="cta" aria-labelledby="cta-title">
+      <div class="cta__bg-orbs" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+      </div>
+      <div class="container cta__container reveal">
+        <h2 id="cta-title">
+          No vuelvas a sentirte solo<br/>
+          frente a la tecnología.
+        </h2>
+        <p class="cta__subtitle">
+          Únete a las más de 50.000 familias que ya respiran tranquilas.
+        </p>
+        <a href="contacto.html" class="btn btn--primary btn--xl">
+          Quiero probar Siempre Contigo
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <p class="cta__foot">Sin tarjeta en el plan gratuito. 30 días gratis en Familia. <a href="precios.html">Ver precios</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Siempre Contigo">
+            <img class="footer__logo-icon" src="images/brand/logo-mark.png" width="44" height="44" alt="" />
+            <span>Siempre Contigo</span>
+          </a>
+          <p class="footer__slogan">La tecnología deja de ser un problema para convertirse en un compañero.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#familia">Para familias</a></li>
+            <li><a href="precios.html">Precios y tarifas</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="prensa.html">Prensa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="accesibilidad.html">Accesibilidad</a></li>
+            <li><a href="mapa-del-sitio.html">Mapa del sitio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p>Hecho con cariño para las personas que queremos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookieTitle">
+    <div class="cookie-banner__grid">
+      <div class="cookie-banner__text">
+        <h3 id="cookieTitle">Preferencias de cookies</h3>
+        <p>Usamos cookies solo para recordar el tema claro u oscuro y sus preferencias. Puede aceptar o rechazar.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <a href="cookies.html" class="cookie-banner__link">Más información</a>
+        <button class="btn btn--ghost btn--sm" id="cookieReject" type="button">Rechazar</button>
+        <button class="btn btn--ghost btn--sm" id="cookieConfigure" type="button">Configurar</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept" type="button">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/local-bootstrap.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/cookies.js"></script>
+</body>
+</html>

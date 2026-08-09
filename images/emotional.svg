@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Momento familiar compartiendo una foto">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#sky)" rx="24"/>
+  <rect x="80" y="60" width="440" height="280" rx="16" fill="#fff" stroke="#0066FF" stroke-width="3" opacity="0.95"/>
+  <circle cx="300" cy="160" r="48" fill="#fcd34d"/>
+  <path d="M220 260 Q300 220 380 260 L380 300 Q300 340 220 300 Z" fill="#0066FF" opacity="0.75"/>
+  <rect x="120" y="200" width="120" height="90" rx="8" fill="#e0e7ff"/>
+  <circle cx="180" cy="235" r="22" fill="#f472b6"/>
+  <path d="M360 200 L420 200 L420 290 L360 290 Z" fill="#86efac" opacity="0.8"/>
+  <path d="M270 320 L300 350 L330 320" fill="#ef4444" opacity="0.7"/>
+</svg>

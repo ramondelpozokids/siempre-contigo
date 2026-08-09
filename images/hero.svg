@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-label="Ilustraci�n: persona mayor usando el m�vil con asistencia">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="900" fill="url(#bg)" rx="48"/>
+  <ellipse cx="400" cy="820" rx="220" ry="28" fill="#0066FF" opacity="0.12"/>
+  <circle cx="400" cy="320" r="110" fill="#fbbf24" opacity="0.9"/>
+  <path d="M290 420 Q400 380 510 420 L520 520 Q400 600 280 520 Z" fill="#0066FF" opacity="0.85"/>
+  <rect x="520" y="480" width="140" height="260" rx="22" fill="url(#phone)"/>
+  <rect x="532" y="500" width="116" height="200" rx="8" fill="#e2e8f0"/>
+  <circle cx="590" cy="720" r="10" fill="#475569"/>
+  <rect x="548" y="520" width="84" height="12" rx="6" fill="#0066FF" opacity="0.5"/>
+  <rect x="548" y="542" width="70" height="8" rx="4" fill="#94a3b8"/>
+  <rect x="548" y="560" width="78" height="8" rx="4" fill="#94a3b8"/>
+  <circle cx="620" cy="440" r="36" fill="#22c55e" opacity="0.9"/>
+  <path d="M608 440 L618 450 L634 428" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

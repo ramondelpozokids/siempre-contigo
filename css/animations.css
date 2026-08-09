@@ -1,0 +1,67 @@
+/* =========================================
+   SIEMPRE CONTIGO — Animations
+   ========================================= */
+
+/* ============= Reveal on scroll ============= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(8px);
+  transition:
+    opacity var(--t-slow) var(--ease-out),
+    transform var(--t-slow) var(--ease-out),
+    filter var(--t-slow) var(--ease-out);
+  will-change: opacity, transform, filter;
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.reveal--delay { transition-delay: 150ms; }
+.reveal--delay-2 { transition-delay: 300ms; }
+
+/* ============= Parallax (JS applied) ============= */
+[data-parallax] {
+  will-change: transform;
+  transition: transform 100ms linear;
+}
+
+/* ============= Hero entrance ============= */
+.hero__content { animation: heroIn 1.2s var(--ease-out) 200ms backwards; }
+.hero__visual { animation: heroIn 1.4s var(--ease-out) 400ms backwards; }
+
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(40px); filter: blur(12px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+/* ============= Micro-interactions ============= */
+a, button { transition: all var(--t-fast) var(--ease); }
+
+.feature-card, .trust-card, .chat-demo, .story__value {
+  transition: all var(--t-base) var(--ease);
+}
+
+/* ============= Reduced motion ============= */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* ============= Focus visible (AAA) ============= */
+*:focus-visible {
+  outline: 3px solid var(--c-blue-electric);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

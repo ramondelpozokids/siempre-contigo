@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="images/brand/favicon.png" />
+  <title>Precios y tarifas — Siempre Contigo</title>
+  <meta name="description" content="Precios claros de Siempre Contigo: plan gratuito, plan Familia 9,99 €/mes, prueba de 30 días. Sin letra pequeña ni costes ocultos." />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="index.html" class="btn btn--primary btn--sm">Volver al inicio</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main" role="main">
+    <section class="legal-hero">
+      <div class="container">
+        <span class="legal-hero__eyebrow">Transparencia total</span>
+        <h1>Precios y tarifas</h1>
+        <p class="legal-hero__meta">Precios con IVA incluido · Sin permanencia · Actualizado agosto 2026</p>
+      </div>
+    </section>
+    <section class="legal">
+      <div class="container">
+        <article class="legal__content pricing-page">
+          <p class="legal__lead">Sabemos que lo primero que preguntan las familias es «¿cuánto cuesta?». Aquí está todo, sin letra pequeña: qué incluye cada plan, cuánto pagas y cómo cancelar.</p>
+
+          <div class="legal__info-card">
+            <strong>Nuestra promesa</strong>
+            <p style="margin:0;">No vendemos tus datos. No hay publicidad. No cobramos por funciones básicas de seguridad. Puedes usar el plan gratuito todo el tiempo que quieras.</p>
+          </div>
+
+          <div class="pricing-grid" role="list">
+            <article class="pricing-card" role="listitem">
+              <h2>Esencial</h2>
+              <p class="pricing-card__tag">Para empezar sin coste</p>
+              <p class="pricing-card__price"><span class="pricing-card__amount">0 €</span> / mes</p>
+              <ul class="pricing-card__features">
+                <li>Asistente por voz en el móvil</li>
+                <li>WhatsApp, correo y llamadas guiadas</li>
+                <li>Detección básica de estafas</li>
+                <li>Recordatorios sencillos</li>
+                <li>Soporte por correo (respuesta en 48 h)</li>
+              </ul>
+              <a href="contacto.html" class="btn btn--ghost btn--lg">Empezar gratis</a>
+            </article>
+
+            <article class="pricing-card pricing-card--featured" role="listitem">
+              <span class="pricing-card__badge">Recomendado para familias</span>
+              <h2>Familia</h2>
+              <p class="pricing-card__tag">Tranquilidad para todos</p>
+              <p class="pricing-card__price"><span class="pricing-card__amount">9,99 €</span> / mes</p>
+              <p class="pricing-card__note">IVA incluido · Facturación mensual</p>
+              <ul class="pricing-card__features">
+                <li>Todo lo del plan Esencial</li>
+                <li>Soporte humano <strong>24 horas, 7 días</strong></li>
+                <li>Hasta <strong>3 familiares</strong> conectados con permiso</li>
+                <li>Alertas discretas y ayuda a distancia</li>
+                <li>Funciones avanzadas (citas, banca guiada, compras seguras)</li>
+                <li><strong>30 días de prueba gratis</strong> (plan Familia)</li>
+              </ul>
+              <a href="contacto.html" class="btn btn--primary btn--lg">Probar 30 días gratis</a>
+            </article>
+
+            <article class="pricing-card" role="listitem">
+              <h2>Instituciones</h2>
+              <p class="pricing-card__tag">Residencias y entidades</p>
+              <p class="pricing-card__price"><span class="pricing-card__amount">A medida</span></p>
+              <ul class="pricing-card__features">
+                <li>Licencias por centro o volumen</li>
+                <li>Formación al personal</li>
+                <li>Informes agregados (sin datos personales)</li>
+                <li>SLA y contacto dedicado</li>
+              </ul>
+              <a href="partners.html" class="btn btn--ghost btn--lg">Solicitar presupuesto</a>
+            </article>
+          </div>
+
+          <h2 id="comparativa">Comparativa detallada</h2>
+          <div class="pricing-table-wrap">
+            <table class="pricing-table">
+              <caption class="sr-only">Comparación de planes Esencial y Familia</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Qué incluye</th>
+                  <th scope="col">Esencial</th>
+                  <th scope="col">Familia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Precio mensual (IVA incl.)</th>
+                  <td>0 €</td>
+                  <td>9,99 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Prueba gratuita</th>
+                  <td>Sí, sin límite de tiempo</td>
+                  <td>30 días del plan Familia</td>
+                </tr>
+                <tr>
+                  <th scope="row">Asistente por voz</th>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                </tr>
+                <tr>
+                  <th scope="row">Persona real al teléfono</th>
+                  <td>No</td>
+                  <td>Sí, 24/7</td>
+                </tr>
+                <tr>
+                  <th scope="row">Familiares conectados</th>
+                  <td>1 perfil</td>
+                  <td>Hasta 3</td>
+                </tr>
+                <tr>
+                  <th scope="row">Permanencia</th>
+                  <td colspan="2">Ninguna. Cancelas cuando quieras.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Publicidad de terceros</th>
+                  <td colspan="2">No, en ningún plan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="preguntas">Preguntas sobre el precio</h2>
+          <dl class="pricing-faq">
+            <dt>¿Necesito tarjeta para el plan gratuito?</dt>
+            <dd>No. Solo hace falta instalar la app y crear una cuenta.</dd>
+            <dt>¿Qué pasa después de los 30 días del plan Familia?</dt>
+            <dd>Si no quieres continuar, pasas al plan Esencial gratis. Si te convence, se cobra 9,99 €/mes a partir del día 31.</dd>
+            <dt>¿Hay descuento anual?</dt>
+            <dd>Sí: <strong>99 €/año</strong> (equivalente a 8,25 €/mes). Contacta en <a href="contacto.html">contacto</a> para activarlo.</dd>
+            <dt>¿Cómo cancelo?</dt>
+            <dd>Desde la app, por voz («quiero cancelar mi suscripción») o escribiendo a <a href="mailto:soporte@siemprecontigo.app">soporte@siemprecontigo.app</a>. Efectivo al final del periodo pagado.</dd>
+          </dl>
+
+          <p style="margin-top:var(--sp-10);">
+            <a href="condiciones.html" class="btn btn--ghost">Condiciones del servicio</a>
+            <a href="contacto.html" class="btn btn--primary">Hablar con nosotros</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:0;padding-top:0;">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="mapa-del-sitio.html">Mapa del sitio</a></p>
+      </div>
+    </div>
+  </footer>
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookieTitle">
+    <div class="cookie-banner__grid">
+      <div class="cookie-banner__text">
+        <h3 id="cookieTitle">Preferencias de cookies</h3>
+        <p>Usamos cookies solo para recordar el tema claro u oscuro y sus preferencias.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <a href="cookies.html" class="cookie-banner__link">Más información</a>
+        <button class="btn btn--ghost btn--sm" id="cookieReject" type="button">Rechazar</button>
+        <button class="btn btn--ghost btn--sm" id="cookieConfigure" type="button">Configurar</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept" type="button">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/local-bootstrap.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/cookies.js"></script>
+</body>
+</html>

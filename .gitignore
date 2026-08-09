@@ -1,0 +1,29 @@
+# Secretos — nunca al repositorio
+.env
+.env.*
+.env.local
+*.pem
+credentials.json
+
+# Vercel local
+.vercel
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python (servidor local)
+__pycache__/
+.venv/
+venv/
+
+# Dependencias futuras
+node_modules/

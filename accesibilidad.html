@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="images/brand/favicon.png" />
+  <title>Accesibilidad — Siempre Contigo</title>
+  <meta name="description" content="Declaración de accesibilidad del sitio web Siempre Contigo. Compromiso con WCAG 2.2 y uso inclusivo para personas mayores." />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dark-mode.css" />
+  <link rel="stylesheet" href="css/legal.css" />
+</head>
+<body>
+  <header class="nav" role="banner">
+    <nav class="nav__container" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo" aria-label="Siempre Contigo - Inicio">
+        <img class="nav__logo-icon" src="images/brand/logo-isotipo-nav.png?v=10" width="88" height="88" alt="" />
+        <span class="nav__logo-text" aria-hidden="true"><span class="nav__logo-text-a">Siempre</span> <span class="nav__logo-text-b">Contigo</span></span>
+      </a>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" type="button">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="index.html" class="btn btn--primary btn--sm">Volver al inicio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section class="legal-hero">
+      <div class="container">
+        <span class="legal-hero__eyebrow">Inclusión digital</span>
+        <h1>Declaración de accesibilidad</h1>
+        <p class="legal-hero__meta">Última revisión: <time datetime="2026-08-01">1 de agosto de 2026</time></p>
+      </div>
+    </section>
+
+    <section class="legal">
+      <div class="container legal__layout">
+        <aside class="legal__toc" aria-label="Índice de contenidos">
+          <h2>En esta página</h2>
+          <ul>
+            <li><a href="#compromiso">1. Nuestro compromiso</a></li>
+            <li><a href="#estado">2. Estado de conformidad</a></li>
+            <li><a href="#medidas">3. Medidas adoptadas</a></li>
+            <li><a href="#limitaciones">4. Limitaciones conocidas</a></li>
+            <li><a href="#feedback">5. Comentarios y contacto</a></li>
+          </ul>
+        </aside>
+
+        <article class="legal__content">
+          <div class="legal__info-card">
+            <strong>Accesible por diseño</strong>
+            <p style="margin:0;">Siempre Contigo está pensado para personas mayores. Esta web refleja los mismos principios: tipografía legible, contraste alto, navegación por teclado y compatibilidad con lectores de pantalla.</p>
+          </div>
+
+          <h2 id="compromiso">1. Nuestro compromiso</h2>
+          <p>Siempre Contigo, S.L. se compromete a hacer accesible su sitio web conforme al Real Decreto 1112/2018 y, como referencia técnica, las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.2 en nivel AA.</p>
+
+          <h2 id="estado">2. Estado de conformidad</h2>
+          <p>Este sitio web es <strong>parcialmente conforme</strong> con WCAG 2.2 nivel AA debido a las excepciones indicadas más abajo. «Parcialmente conforme» significa que algunas partes del contenido no cumplen plenamente el nivel de accesibilidad exigido.</p>
+
+          <h2 id="medidas">3. Medidas adoptadas</h2>
+          <ul>
+            <li>Botón <strong>«Texto grande»</strong> en la barra superior: aumenta el tamaño de letra, el contraste y el área de pulsación de botones.</li>
+            <li>Estructura clara con encabezados, textos alternativos en imágenes y botones con etiquetas comprensibles.</li>
+            <li>Controles con soporte ARIA (preguntas frecuentes, cookies, tema claro/oscuro).</li>
+            <li>Respeto de <code>prefers-reduced-motion</code>: menos animaciones si el sistema lo pide.</li>
+            <li>Modo claro y oscuro con contraste revisado en ambos temas.</li>
+            <li>Enlaces y botones visibles al navegar con teclado (contorno azul).</li>
+          </ul>
+
+          <h2 id="limitaciones">4. Limitaciones conocidas</h2>
+          <ul>
+            <li>Algunas demostraciones de chat usan animaciones de escritura que pueden resultar lentas; el contenido completo permanece disponible en el DOM.</li>
+            <li>Enlaces a secciones de producto aún no publicadas pueden tener contenido provisional.</li>
+          </ul>
+
+          <h2 id="feedback">5. Comentarios y contacto</h2>
+          <p>Si encuentras una barrera de accesibilidad en este sitio, escríbenos a <strong>accesibilidad@siemprecontigo.app</strong> indicando la página y el problema. Responderemos en un plazo máximo de 10 días laborables.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__bottom" style="border-top:0;padding-top:0;">
+        <p>© 2026 Siempre Contigo. Todos los derechos reservados.</p>
+        <p><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Privacidad</a> · <a href="mapa-del-sitio.html">Mapa del sitio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookieTitle">
+    <div class="cookie-banner__grid">
+      <div class="cookie-banner__text">
+        <h3 id="cookieTitle">🍪 Usamos cookies para mejorar tu experiencia</h3>
+        <p>Puedes aceptarlas todas, rechazarlas o configurar tus preferencias.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <a href="cookies.html" class="cookie-banner__link">Más información</a>
+        <button class="btn btn--ghost btn--sm" id="cookieReject" type="button">Rechazar</button>
+        <button class="btn btn--ghost btn--sm" id="cookieConfigure" type="button">Configurar</button>
+        <button class="btn btn--primary btn--sm" id="cookieAccept" type="button">Aceptar todas</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/local-bootstrap.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/cookies.js"></script>
+</body>
+</html>

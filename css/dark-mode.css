@@ -1,0 +1,106 @@
+/* =========================================
+   SIEMPRE CONTIGO — Dark Mode
+   ========================================= */
+
+[data-theme="dark"] {
+  --c-white: #0a0e1a;
+  --c-blue-soft: #151a2a;
+  --c-blue-electric: #4d8bff;
+  --c-blue-electric-dark: #66a3ff;
+  --c-blue-electric-soft: #80b3ff;
+  --c-gray-50: #0f1320;
+  --c-gray-100: #1a1f2e;
+  --c-gray-200: #2a3142;
+  --c-gray-300: #3d4559;
+  --c-gray-400: #8692a6;
+  --c-gray-500: #a1adbf;
+  --c-gray-900: #f5f5f7;
+  --c-text: #f5f5f7;
+  --c-text-soft: #a1adbf;
+  --c-bg: #0a0e1a;
+  --c-bg-alt: #0f1320;
+  --c-glass-bg: rgba(26, 31, 46, 0.6);
+  --c-glass-border: rgba(255, 255, 255, 0.08);
+  --c-shadow: rgba(0, 0, 0, 0.3);
+  --c-shadow-md: rgba(0, 0, 0, 0.4);
+  --c-shadow-lg: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] body {
+  background: var(--c-bg);
+  color: var(--c-text);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 { color: var(--c-text); }
+
+[data-theme="dark"] .btn--primary {
+  background: var(--c-text);
+  color: var(--c-bg);
+}
+[data-theme="dark"] .btn--primary:hover {
+  background: var(--c-blue-electric);
+  color: var(--c-white);
+}
+[data-theme="dark"] .btn--ghost {
+  border-color: var(--c-gray-200);
+  color: var(--c-text);
+}
+[data-theme="dark"] .btn--ghost:hover {
+  background: var(--c-gray-100);
+  border-color: var(--c-text);
+}
+
+[data-theme="dark"] .nav::before {
+  background: rgba(10, 14, 26, 0.7);
+}
+[data-theme="dark"] .nav.scrolled::before {
+  border-bottom-color: var(--c-gray-200);
+}
+
+[data-theme="dark"] .hero__badge {
+  background: var(--c-gray-100);
+  border-color: var(--c-gray-200);
+}
+[data-theme="dark"] .hero__mockup {
+  background: linear-gradient(135deg, var(--c-blue-soft) 0%, var(--c-gray-100) 100%);
+}
+
+[data-theme="dark"] .story__value,
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .chat-demo,
+[data-theme="dark"] .trust-card,
+[data-theme="dark"] .faq__item {
+  background: var(--c-gray-100);
+  border-color: var(--c-gray-200);
+}
+
+[data-theme="dark"] .feature-card--accent,
+[data-theme="dark"] .trust-card--highlight,
+[data-theme="dark"] .cta__container {
+  background: linear-gradient(135deg, var(--c-gray-100) 0%, var(--c-gray-50) 100%);
+}
+
+[data-theme="dark"] .chat-msg--user {
+  background: var(--c-blue-electric);
+}
+[data-theme="dark"] .chat-msg--ai {
+  background: var(--c-gray-100);
+}
+[data-theme="dark"] .chat-msg--ai-warn {
+  background: rgba(245, 124, 0, 0.15);
+  color: #ffb74d;
+  border-left-color: #f57c00;
+}
+
+[data-theme="dark"] .family__phone {
+  background: var(--c-gray-100);
+  border-color: var(--c-gray-200);
+}
+[data-theme="dark"] .family__phone-app {
+  background: var(--c-gray-50);
+}
+
+[data-theme="dark"] .scroll-indicator__line { background: var(--c-gray-300); }
